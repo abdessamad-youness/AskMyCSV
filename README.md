@@ -46,6 +46,7 @@ inside the box and powerless outside it.
 ```bash
 # 1. Build the sandbox image
 docker build -t askmycsv-sandbox sandbox/
+
 # 2. Configure inference (copy .env.example to .env, fill in key + model)
 # 3. Run the control app
 pip install -r requirements.txt
