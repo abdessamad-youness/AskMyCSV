@@ -11,6 +11,12 @@ the box.
 
 **▶ Try it live: http://45.76.88.114:8000** — deployed on a Vultr Cloud Compute VM (Frankfurt) with Vultr Serverless Inference and the isolated Docker sandbox, exactly as described below. Test file: demo_data/sales.csv — ask "Which month had the highest sales?" (answer: May, 6,700).
 
+## Certificate
+
+🏆 **Certificate of Completion — Vultr: Agent Rush Hackathon** (lablab.ai), awarded November 9, 2026, for building and submitting AskMyCSV.
+
+Verify: https://lablab.build/u/@abdessamadey99/ai-hackathons/vultr-hackathon/certificate
+
 ## How it works
 
 1. The control app (FastAPI on a **Vultr Cloud Compute VM**) receives the CSV + question.
@@ -40,7 +46,6 @@ inside the box and powerless outside it.
 ```bash
 # 1. Build the sandbox image
 docker build -t askmycsv-sandbox sandbox/
-
 # 2. Configure inference (copy .env.example to .env, fill in key + model)
 # 3. Run the control app
 pip install -r requirements.txt
