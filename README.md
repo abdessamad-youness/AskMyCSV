@@ -7,6 +7,10 @@ code, runs it inside a locked-down Docker sandbox on Vultr, and returns a real
 chart + the numbers. The generated code can *never* touch anything outside
 the box.
 
+## Live demo
+
+**▶ Try it live: http://45.76.88.114:8000** — deployed on a Vultr Cloud Compute VM (Frankfurt) with Vultr Serverless Inference and the isolated Docker sandbox, exactly as described below. Test file: demo_data/sales.csv — ask "Which month had the highest sales?" (answer: May, 6,700).
+
 ## How it works
 
 1. The control app (FastAPI on a **Vultr Cloud Compute VM**) receives the CSV + question.
